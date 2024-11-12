@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header, #menu, #footer {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24pt;
+    font-weight: bolder;
+    text-align: center;
+}
+#header{
+    background-image: url(Banner.jpg);
+    border: 10px ridge aliceblue;
+    padding: 5px 10px;
+    border-radius: 45px;
+}
+#menu{
+    font-style: oblique;
+    background-color: #fff2df;
+    display: flex;
+    justify-content: space-around;
+    border: 10px ridge aliceblue;
+    padding: 5px 10px;
+    border-radius: 45px;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: row; /*agar sidebar dan main sejajar */
+}
+#sidebar{
+    background-color: pink;
+    width: 200px;
+    border: 10px ridge aliceblue;
+    padding: 5px 10px;
+    border-radius: 45px;
+    flex-shrink: 0; /*agar sidebarnya tidak mengecil */
+}
+#main{
+    background-color: hotpink;
+    flex: 1;
+    padding: 20px;
+    border: 10px ridge aliceblue;
+    padding: 5px 10px;
+    border-radius: 45px;
+}
+#footer{
+    background-color: white;
+    border: 10px ridge aliceblue;
+    padding: 5px 10px;
+    border-radius: 45px;
+}
